@@ -32,6 +32,7 @@ mysql:
     max_idle_conns: 10    #最大空闲的连接的个数, {default: 10}
     max_life_conns: 0     #连接的生命时间,超过此时间，连接将关闭后重新建立新的，0代表忽略相关判断,单位:second, {default: 0}
     debug_sql: true      #是否开启debug, {default: false}
+    
 
   slave: #mysql实例名称，作为key用于表示某个mysql实例，自定义命名, 例如: local, master, slave, feed_master, ...
     dsn: "root:beego@tcp(121.36.216.191:3306)/inherited?charset=utf8mb4&parseTime=True&loc=Local"  #[MUST]
