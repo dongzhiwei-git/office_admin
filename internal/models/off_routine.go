@@ -1,12 +1,10 @@
 package models
 
-import "time"
-
 type OffRoutine struct {
-	id          int       `json:"id" json:"id"`
-	time        time.Time `gorm:"meeting_time" json:"meeting_time"`
-	transaction string    `gorm:"join_people" json:"join_people"`
-	Record      string    `gorm:"record" json:"record"`
+	ID          int    `json:"id" json:"id"`
+	Time        string `gorm:"time" json:"time"`
+	Transaction string `gorm:"transaction" json:"transaction"`
+	Record      string `gorm:"record" json:"record"`
 }
 
 func (OffRoutine) TableName() string {
